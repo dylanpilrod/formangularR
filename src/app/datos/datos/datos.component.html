@@ -1,0 +1,29 @@
+
+<br>
+<table>
+    <thead>
+    <tr>
+        <th>nombreBebida:</th>
+        <th>tipoAlcohol:</th>
+        <th>gradosDeAlcohol:</th>
+        <th>tipoMezcla:</th>
+        <th>fechaCreacion:</th>
+        <th>campoEmail:</th>
+        <th>mayorEdad:</th>
+    </tr>
+</thead>
+<tbody>
+    <ng-container *ngFor="let bebida of bebidas">
+        <tr>
+        <td>{{bebida.nombreBebida}}</td>
+        <td>{{bebida.tipoAlcohol}}</td>
+        <td>{{bebida.gradosDeAlcohol}}</td>
+        <td>{{bebida.tipoMezcla}}</td>
+        <td>{{bebida.fechaCreacion}}</td>
+        <td>{{bebida.campoEmail}}</td>
+        <td>{{bebida.mayorEdad}}</td>
+        </tr>
+    </ng-container>
+</tbody>
+</table>
+<br>

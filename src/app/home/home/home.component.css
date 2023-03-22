@@ -1,0 +1,29 @@
+.content{
+    background-image: url(https://media.istockphoto.com/id/1370333148/es/vector/los-iconos-del-gabinete-de-vino-establecen-el-vector-de-contorno-alcohol-de-estante.jpg?s=612x612&w=0&k=20&c=-PQbiCi0omNUok2dI8qvPFJYB5M6inKF2vej3MNMdjk=);
+    height: 35vw;
+    border: solid black 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenidoHome{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.822);
+    padding: 30px;
+}
+.titulo{
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    padding: 40px;
+    margin: 0;
+    text-decoration: line-through;
+}
+.parrafo{
+    margin: 0;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    padding: 20px;
+    border: solid white 3px;
+}

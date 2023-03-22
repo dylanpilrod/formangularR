@@ -1,0 +1,57 @@
+<br>
+<div class="content">
+  <div>
+    <form [formGroup]="Form" (ngSubmit)="Clic(Form.value)">
+      <label for="nombreBebida">Nombre de la bebida:</label>
+      <input type="text" id="nombreBebida" name="nombreBebida" formControlName="nombreBebida">
+      <div *ngIf="nombreBebida.errors?.['required']" class="validadores">Es requerido manito</div>
+      <div *ngIf="nombreBebida.errors?.['minlength']" class="validadores">Demasiado Corto</div>
+      <div *ngIf="nombreBebida.errors?.['maxlength']" class="validadores">Demasiado Largo</div>
+      <br>
+      <label for="tipoAlcohol">Tipo de alcohol:</label>
+      <select id="tipoAlcohol" name="tipoAlcohol" formControlName="tipoAlcohol">
+        <option value="Whisky">Whisky</option>
+        <option value="Ron">Ron</option>
+        <option value="Vodka">Vodka</option>
+      </select>
+      <div *ngIf="tipoAlcohol.errors?.['required']" class="validadores">Seleccione una opción</div>
+      <br>
+      
+      <label for="gradosDeAlcohol">Grados de alcohol:</label>
+      <input type="text" id="gradosDeAlcohol" name="gradosDeAlcohol" formControlName="gradosDeAlcohol">
+      <div *ngIf="gradosDeAlcohol.errors?.['pattern']" class="validadores">Solo Numeros</div>
+      <div *ngIf="gradosDeAlcohol.errors?.['maxlength']" class="validadores">Demasiado Largo</div>
+      <br>
+      <br>
+      <label for="tipoMezcla">Tipo de Mezcla:</label>
+      <select id="tipoMezcla" name="tipoMezcla" formControlName="tipoMezcla">
+        <option value="opcion1">Coca-Cola</option>
+        <option value="opcion2">Fanta-Naranja</option>
+        <option value="opcion3">Seven-Up</option>
+      </select>
+      <div *ngIf="tipoMezcla.errors?.['required']" class="validadores">Seleccione una opción</div>
+      <br>
+
+      <label for="fechaCreacion">Fecha de Creación:</label>
+      <input type="date" id="fechaCreacion" name="fechaCreacion" formControlName="fechaCreacion">
+      <div *ngIf="fechaCreacion.invalid" class="validadores">Escoja una fecha</div>
+      <br>
+
+      <label for="campoEmail">Tu Mail?</label>
+      <input type="email" id="campoEmail" name="campoEmail" formControlName="campoEmail">
+      <div *ngIf="campoEmail.errors?.['pattern']" class="validadores">Sabes escribir un mail?</div>
+      <div *ngIf="campoEmail.errors?.['invalid']" class="validadores">Rellenalo anda</div>
+      <br>
+
+      <label for="mayorEdad">Soy mayor de edad: </label>
+      <input type="checkbox" id="campoCheck1" name="mayorEdad" value="si" formControlName="mayorEdad">
+      <label for="mayorEdad"></label><br>
+      <div *ngIf="mayorEdad.invalid" class="validadores">No Puedes acceder</div>
+      <br>
+
+
+      <input type="submit" value="Enviar" [disabled]="Form.invalid">
+    </form>
+  </div>
+</div>
+<br>

@@ -1,0 +1,51 @@
+.headerWeb {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000000;
+    border: solid black 3px;
+  }
+  
+  img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin: 10px;
+    text-decoration: line-through;
+  }
+  .navegacion{
+    text-align: center;
+    margin-top: 10px;
+  }
+.button {
+    background-color: #ffffff;
+    border: none;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    padding: 10px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 90px;
+    cursor: pointer;
+    border: solid black 3px;
+  }
+  .button:hover{
+    background-color: rgb(255, 0, 0);
+    font-size: 17px;
+    padding: 10px 45px;
+  }
+  .texto{
+    display: block;
+  }
+  .fotoLogo{
+    width: 3%;
+    display: block;
+  }
+  
